@@ -1,0 +1,9 @@
+.foot{
+    color: #333;
+}
+
+#demo{
+    width: 300px;
+    height: 200px;
+    background: url(../images/map_bg.jpg) no-repeat;
+}

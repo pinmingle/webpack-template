@@ -1,0 +1,44 @@
+/* main.css */
+html {
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #f00;
+
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+:fullscreen {
+    background: #0ff;
+}
+
+@custom-media --med (width <= 50rem);
+
+@media (--med) {
+    a {
+        color:#ff0;
+        &:hover {
+             color: color-mod(black alpha(54%));
+         }
+    }
+}
+
+a{
+    color: #f00;
+    &:hover{
+        color: #0f0;
+     }
+}
