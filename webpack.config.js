@@ -21,11 +21,29 @@ let devServer = {
     host:devServerConfig.host,
     compress:true,
     proxy: {
+        // 通用模式
         '*': {
             target: devServerConfig.target,
             secure: false,
             changeOrigin:true
-        }
+        },
+        // 多个代理
+        // '/api1': {
+        //     target: 'https://XX.XXXX.com',
+        //     secure: false,
+        //     changeOrigin: true,
+        //     pathRewrite: {
+        //         '^/api1': ''
+        //     }
+        // },
+        // '/api2': {
+        //     target: 'https://YY.YYYY.com',
+        //     secure: false,
+        //     changeOrigin: true,
+        //     pathRewrite: {
+        //         '^/api2': ''
+        //     }
+        // }
     }
 }
 
